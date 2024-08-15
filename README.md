@@ -23,9 +23,10 @@ ___
 | CPU               | Intel Core i7-8700                                   |
 | iGPU              | Intel UHD Graphics 630 (Force disabled by Dell BIOS) |
 | dGPU              | NVIDIA GeForce GTX 1070 8GB                          |
+| Motherboard       | Dell 0PXWHK                                          |
 | RAM               | 32GB DDR4 2133MHz                                    |
 | Storage           | 256GB SATA M.2 SSD                                   |
-| Audio             | Realtek ALC3861                                      |
+| Audio             | Realtek ALC3861 (AKA ALC899/ALC898)                  |
 | Ethernet          | Realtek RTL8111                                      |
 | Wi-Fi + Bluetooth | Qualcomm QCA9377 (Windows Only)                      |
 | BIOS Version      | 2.13.0                                               |
@@ -71,6 +72,7 @@ Once installed, you will need to install all security updates via the App Store 
 - [x] DRM
 - [x] USB
 - [x] Ethernet
+- [x] Audio
 - [x] HDMI Audio
 - [x] NVRAM
 - [x] DVD Drive
@@ -82,11 +84,9 @@ Once installed, you will need to install all security updates via the App Store 
   - If running from the iGPU, support exists up to macOS Sequoia (15.x), but requires further configuration - see [here](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#add-2) for more information.
 - [ ] Wi-Fi + Bluetooth
   - The Qualcomm QCA9377 card is not supported by macOS, and requires replacement with a compatible card. See [here](https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/m2.html#m-2) for recommendations.
-- [ ] Modern macOS versions (Monterey 10.14.x and later)
-  - The NVIDIA Web Drivers required by the NVIDIA GeForce GTX 1070 is not supported by macOS Monterey and later, and requires replacement with a supported card. See [here](https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/amd-gpu.html) for recommendations, or remove the dGPU to enable the iGPU.
+- [ ] Modern macOS versions (Mojave 10.14.x and later)
+  - The NVIDIA Web Drivers required by the NVIDIA GeForce GTX 1070 is not supported by macOS Mojave and later, and requires replacement with a supported card. See [here](https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/amd-gpu.html) for recommendations, or remove the dGPU to enable the iGPU.
   - Alternatively, the NVIDIA Web Drivers can be patched to work with later versions of macOS, however Metal functionality is lost.
-- [ ] Audio
-  - Further testing required
 - [ ] Sleep
 
 ## 📦 Versions
